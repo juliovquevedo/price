@@ -25,6 +25,10 @@ label {
     margin-bottom: 1.5rem;
 }
 
+#result {
+    width: 100%;
+}
+
 .left {
     float: left;
     margin-left: 5%;
@@ -37,7 +41,6 @@ label {
 
 .left, .right {
     width: 40%;
-/*    margin-top: 1rem;*/
     margin-bottom: 2rem;
 }
 
