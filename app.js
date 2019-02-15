@@ -2,6 +2,7 @@ var prices = [];
 var discounts = [];
 
 document.getElementById("calc").onclick = GetDiscount;
+document.getElementById("clear").onclick = ClearFields;
 
 function GetDiscount() {
     prices = document.getElementsByClassName("price");
@@ -23,4 +24,13 @@ function GetDiscount() {
                                                 "Discounted Price $" + discountedPrice + "<br>" +
                                                 "Discount Percent: " + percentDiscount + "%<br>" +
                                                 "Price per Item: $" + itemPrice + "<br>";
+}
+
+function ClearFields () {
+    var length = prices.length;
+    
+    for (i = 0; i < length; i++) {
+        document.getElementsByClassName("price")[i].value = "";
+        document.getElementsByClassName("discount")[i].value = "";
+    }
 }
