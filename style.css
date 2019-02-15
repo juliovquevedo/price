@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: sandybrown;
+    background-color: burlywood;
 }
 
 h2 {
@@ -27,6 +27,7 @@ label {
 
 #result {
     width: 100%;
+    font-size: 1.5rem;
 }
 
 .left {
@@ -47,6 +48,7 @@ label {
 input {
     border: none;
     border-bottom: 1px solid navy;
+    border-radius: 0.3rem;
     font-size: 1.2rem;
     text-align: center;
 }
