@@ -3,6 +3,7 @@ var discounts = [];
 
 document.getElementById("calc").onclick = GetDiscount;
 document.getElementById("clear").onclick = ClearFields;
+document.getElementById("additem").onclick = AddItem;
 
 function GetDiscount() {
     prices = document.getElementsByClassName("price");
@@ -35,4 +36,18 @@ function ClearFields () {
         document.getElementsByClassName("discount")[i].value = "";
         document.getElementById("result").innerHTML = "";
     }
+}
+
+function AddItem () {
+    var inputLeft = document.createElement("input");
+    inputLeft.setAttribute("class", "left price");
+    inputLeft.setAttribute("type", "number");
+    var inputRight = document.createElement("input");
+    inputRight.setAttribute("class", "right discount");
+    inputRight.setAttribute("type", "number");
+
+    var field = document.getElementById("fields");
+    
+    field.appendChild(inputLeft);
+    field.appendChild(inputRight);
 }

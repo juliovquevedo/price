@@ -11,13 +11,18 @@
         <form>
             <label >Price</label>
             <label >Discount</label><br>
-            <input class="left price" type="number" name="price1">
-            <input class="right discount" type="number" name="discount1"><br>
-            <input class="left price" type="number" name="price2">
-            <input class="right discount" type="number" name="discount2"><br>
+            
+            <div id="fields">
+            <input class="left price" type="number">
+            <input class="right discount" type="number">
+            <input class="left price" type="number">
+            <input class="right discount" type="number">
+            </div>
+            
             <label id="result"></label>
+            
             <input type="button" value="Calculate" id="calc">
-            <input type="button" value="Add Item">
+            <input type="button" value="Add Item" id="additem">
             <input type="button" value="Clear" id="clear">
         </form>
         <script src="app.js"></script>
