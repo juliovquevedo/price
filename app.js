@@ -33,5 +33,6 @@ function ClearFields () {
     for (i = 0; i < length; i++) {
         document.getElementsByClassName("price")[i].value = "";
         document.getElementsByClassName("discount")[i].value = "";
+        document.getElementById("result").innerHTML = "";
     }
 }
